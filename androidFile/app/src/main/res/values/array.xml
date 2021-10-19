@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="addTask_type_array">
+        <item>Challenge</item>
+        <item>Task</item>
+    </array>
+</resources>

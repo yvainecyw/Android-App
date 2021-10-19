@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".register_activity">
+
+    <TextView
+        android:id="@+id/new_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:layout_marginBottom="611dp"
+        android:text="Create new Accocunt"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/new_account_imageView"
+        android:layout_width="240sp"
+        android:layout_height="240sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:layout_marginBottom="382dp"
+        android:clickable="true"
+        app:srcCompat="@drawable/cat4" />
+
+    <EditText
+        android:id="@+id/register_email_editText"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="214dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="   Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/register_password_editText"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="274dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="   Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/register_create_account_button"
+        android:layout_width="340sp"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="129dp"
+        android:background="@drawable/input_background"
+        android:text="Create Account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/register_close_button"
+        android:layout_width="340sp"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="78dp"
+        android:background="@drawable/button_background"
+        android:text="Back to Login" />
+
+    <EditText
+        android:id="@+id/register_name_editText"
+        android:layout_width="340sp"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginBottom="329dp"
+        android:background="@drawable/input_background"
+        android:ems="10"
+        android:hint="   Name"
+        android:inputType="textPersonName" />
+
+    <ProgressBar
+        android:id="@+id/register_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-7dp"
+        android:layout_marginRight="-7dp"
+        android:indeterminate="true"
+        android:layout_marginBottom="683dp" />
+
+</RelativeLayout>

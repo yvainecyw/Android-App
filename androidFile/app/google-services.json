@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "603088246036",
+    "firebase_url": "https://androidfile-e6aea.firebaseio.com",
+    "project_id": "androidfile-e6aea",
+    "storage_bucket": "androidfile-e6aea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603088246036:android:441ff8e80dcce34a",
+        "android_client_info": {
+          "package_name": "com.example.shuafeia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "603088246036-2ps6g9rumkf4vd4c5gvmqgtno6bkku39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shuafeia",
+            "certificate_hash": "f5447831cffc8fbeef6ac231d29acb85fac98f77"
+          }
+        },
+        {
+          "client_id": "603088246036-f786kc32lgu04a60v2nm6k5fghbm28c1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdwYPJcwJooeCaaO7Z8puT0H327dqmO1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "603088246036-f786kc32lgu04a60v2nm6k5fghbm28c1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

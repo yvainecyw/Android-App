@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".friend_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="36dp"
+                android:layout_height="38dp"
+                android:onClick="goBack"
+                android:src="@drawable/back_ic" />
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/friend_s_profile"
+                android:textSize="17dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_above="@+id/friend_show_result"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginRight="163dp"
+            android:layout_marginBottom="18dp"
+            android:src="@drawable/cat3" />
+
+        <TextView
+            android:id="@+id/friend_show_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="135dp"
+            android:layout_marginRight="135dp"
+            android:layout_marginBottom="23dp"
+            android:text="Well Done"
+            android:textSize="30dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@color/mainColor">
+
+
+        <TextView
+            android:id="@+id/month_textview"
+            android:layout_width="108dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginRight="132dp"
+            android:text="@string/overview"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/friend_icon_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="58dp"
+            android:layout_marginLeft="58dp"
+            android:layout_marginBottom="96dp"
+            android:src="@drawable/task_done" />
+
+        <ImageView
+            android:id="@+id/friend_icon_imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:layout_marginBottom="95dp"
+            android:layout_toStartOf="@+id/friend_icon_imageView3"
+            android:layout_toLeftOf="@+id/friend_icon_imageView3"
+            android:layout_toEndOf="@+id/friend_icon_imageView"
+            android:layout_toRightOf="@+id/friend_icon_imageView"
+            android:src="@drawable/challenge_comp" />
+
+        <ImageView
+            android:id="@+id/friend_icon_imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="49dp"
+            android:layout_marginRight="49dp"
+            android:layout_marginBottom="95dp"
+            android:src="@drawable/reminded" />
+
+        <TextView
+            android:id="@+id/friend_reminded_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="61dp"
+            android:layout_marginRight="61dp"
+            android:layout_marginBottom="24dp"
+            android:text="1/4" />
+
+        <TextView
+            android:id="@+id/friend_challange_complete_count_textview"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="106dp"
+            android:layout_marginLeft="106dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginRight="78dp"
+            android:layout_marginBottom="22dp"
+            android:layout_toStartOf="@+id/friend_reminded_count_textview"
+            android:layout_toLeftOf="@+id/friend_reminded_count_textview"
+            android:layout_toEndOf="@+id/friend_task_done_count_textview"
+            android:layout_toRightOf="@+id/friend_task_done_count_textview"
+            android:text="2/2" />
+
+        <TextView
+            android:id="@+id/friend_task_done_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginLeft="71dp"
+            android:layout_marginBottom="26dp"
+            android:text="1/2" />
+
+        <TextView
+            android:id="@+id/friend_reminded_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/friend_reminded_count_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="21dp"
+            android:text="Reminded" />
+
+        <TextView
+            android:id="@+id/friend_challang_complete_textview"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/friend_challange_complete_count_textview"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="69dp"
+            android:layout_marginRight="69dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/friend_reminded_textview"
+            android:layout_toLeftOf="@+id/friend_reminded_textview"
+            android:layout_toEndOf="@+id/friend_task_done_textview"
+            android:layout_toRightOf="@+id/friend_task_done_textview"
+            android:text=" Challange Complete" />
+
+        <TextView
+            android:id="@+id/friend_task_done_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/friend_task_done_count_textview"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginBottom="21dp"
+            android:text="Task Done" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/friend_upComming_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="285dp"
+            android:layout_marginRight="285dp"
+            android:text="Task Comming" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="310dp"
+            android:layout_marginRight="310dp"
+            android:text="10:00 AM"
+            android:textColor="@color/secColor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/friend_upComming_task_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginRight="234dp"
+            android:text="Challange"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/friend_upComming_task"
+            android:layout_width="273dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/friend_upComming_task_type"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="77dp"
+            android:layout_marginRight="77dp"
+            android:layout_marginBottom="146dp"
+            android:text="Time For GYM!!!"
+            android:textColor="@color/secColor"
+            android:textSize="23sp" />
+    </RelativeLayout>
+
+</LinearLayout>

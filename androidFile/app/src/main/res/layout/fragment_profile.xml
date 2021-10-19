@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:minHeight="?attr/actionBarSize">
+
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/title_profile"
+                android:textSize="17dp" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@color/mainColor">
+
+
+        <TextView
+            android:id="@+id/month_textview"
+            android:layout_width="108dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="159dp"
+            android:layout_marginLeft="159dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="144dp"
+            android:text="@string/month_overview"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/friend_icon_imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="59dp"
+            android:layout_marginLeft="59dp"
+            android:layout_marginBottom="113dp"
+            android:src="@drawable/task_done" />
+
+        <ImageView
+            android:id="@+id/friend_icon_imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginBottom="110dp"
+            android:layout_toStartOf="@+id/friend_icon_imageView3"
+            android:layout_toLeftOf="@+id/friend_icon_imageView3"
+            android:layout_toEndOf="@+id/friend_icon_imageView"
+            android:layout_toRightOf="@+id/friend_icon_imageView"
+            android:src="@drawable/challenge_comp" />
+
+        <ImageView
+            android:id="@+id/friend_icon_imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="54dp"
+            android:layout_marginRight="54dp"
+            android:layout_marginBottom="112dp"
+            android:src="@drawable/reminded" />
+
+        <TextView
+            android:id="@+id/friend_reminded_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="27dp"
+            android:text="@string/profile_default_number" />
+
+        <TextView
+            android:id="@+id/friend_challange_complete_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:layout_marginBottom="27dp"
+            android:layout_toStartOf="@+id/friend_reminded_count_textview"
+            android:layout_toLeftOf="@+id/friend_reminded_count_textview"
+            android:layout_toEndOf="@+id/friend_task_done_count_textview"
+            android:layout_toRightOf="@+id/friend_task_done_count_textview"
+            android:text="@string/profile_default_number" />
+
+        <TextView
+            android:id="@+id/friend_task_done_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="75dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="27dp"
+            android:text="@string/profile_default_number" />
+
+        <TextView
+            android:id="@+id/friend_reminded_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/friend_reminded_count_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginBottom="12dp"
+            android:text="Reminded" />
+
+        <TextView
+            android:id="@+id/friend_challang_complete_textview"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/friend_challange_complete_count_textview"
+            android:layout_marginStart="53dp"
+            android:layout_marginLeft="53dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp"
+            android:layout_marginBottom="13dp"
+            android:layout_toStartOf="@+id/friend_reminded_textview"
+            android:layout_toLeftOf="@+id/friend_reminded_textview"
+            android:layout_toEndOf="@+id/friend_task_done_textview"
+            android:layout_toRightOf="@+id/friend_task_done_textview"
+            android:text=" Challange Complete" />
+
+        <TextView
+            android:id="@+id/friend_task_done_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/friend_task_done_count_textview"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginBottom="21dp"
+            android:text="Task Done" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/profile_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</LinearLayout>
